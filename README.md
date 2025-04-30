@@ -34,7 +34,7 @@ A Node.js backend API to upload .xlsx and .csv freight data, validate, store in 
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/freight-import-system.git
+    git clone https://github.com/AvinashKant/freight-import-system
     cd freight-import-system
     ```
 
@@ -71,7 +71,15 @@ A Node.js backend API to upload .xlsx and .csv freight data, validate, store in 
     ```bash
     npm run dev
     ```
-6.  **Test Cases:**
+
+6.  **Urls:**
+
+    ```bash
+    BE = http://localhost:5000
+    FE = http://localhost:5173
+    ```
+
+7.  **Test Cases:**
 
     ```bash
     cd backend
