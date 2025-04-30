@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "ef1975c2-cc47-4e51-8954-71415ad892bd",
+		"name": "freight",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35115013"
+	},
+	"item": [
+		{
+			"name": "POST",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/event-stream",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"origin_country\": \"China\",\r\n    \"destination_country\": \"UK\",\r\n    \"container_type\": \"20Fit\",\r\n    \"carrier\": \".carrier\",\r\n    \"freight_rate\": \"1200\"\r\n  },\r\n  {\r\n    \"origin_country\": \"China\",\r\n    \"destination_country\": \"UK\",\r\n    \"container_type\": \"20Fit\",\r\n    \"carrier\": \".carrier\",\r\n    \"freight_rate\": \"1200\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/freight/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"freight",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/event-stream",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"origin_country\": \"China\",\r\n    \"destination_country\": \"UK\",\r\n    \"container_type\": \"20Fit\",\r\n    \"carrier\": \".carrier\",\r\n    \"freight_rate\": \"1200\"\r\n  },\r\n  {\r\n    \"origin_country\": \"China\",\r\n    \"destination_country\": \"UK\",\r\n    \"container_type\": \"20Fit\",\r\n    \"carrier\": \".carrier\",\r\n    \"freight_rate\": \"1200\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/freight?page=1&pageSize=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"freight"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
